@@ -1,0 +1,9 @@
+services:
+	supportMailProvider:
+		class: App\Provider\MailProvider
+		setup:
+			- $data(%global%)
+
+parameters:
+	global:
+		supportMail: foo@bar.cz
